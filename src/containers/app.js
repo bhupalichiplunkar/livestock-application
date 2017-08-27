@@ -5,6 +5,7 @@ import { formatIncomingData } from './../helpers';
 import { watchIncomingData } from './../actions'
 import Websocket from 'react-websocket';
 import TableView from './../components/tableView';
+import GraphView from './../components/graphView';
 import './../styles/app.css';
 
 
@@ -29,6 +30,7 @@ class App extends Component {
       <div className="App">
         <Websocket url='ws://stocks.mnet.website' onMessage={this.updateList.bind(this)}/>
         <TableView data={this.props.tickerData} />
+        <GraphView data={this.props.tickerData} />
       </div>
     );
   }
