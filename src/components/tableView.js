@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TimeAgo from 'react-timeago';
+import '../styles/tableView.css';
 
 class TableView extends Component{
     renderRows (ticker){
@@ -15,7 +16,6 @@ class TableView extends Component{
     render () {
         return (
             <div className="table-data">
-                <h3> Real Time Stocks </h3>
                 <table className="table">
                     <thead>
                         <tr>

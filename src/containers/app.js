@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { formatIncomingData } from './../helpers';
-import { watchIncomingData } from './../actions'
+import { formatIncomingData } from '../helpers';
+import { watchIncomingData } from '../actions'
 import Websocket from 'react-websocket';
-import TableView from './../components/tableView';
-import GraphView from './../components/graphView';
-import './../styles/app.css';
+import TableView from '../components/tableView';
+import GraphView from '../components/graphView';
+import '../styles/app.css';
 
 
 class App extends Component {
@@ -27,10 +27,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
+        <div className="header">Realtime Stock Application</div>
         <Websocket url='ws://stocks.mnet.website' onMessage={this.updateList.bind(this)}/>
-        <TableView data={this.props.tickerData} />
-        <GraphView data={this.props.tickerData} />
+        <div className="main-container">
+          <TableView data={this.props.tickerData} />
+          <GraphView data={this.props.tickerData} />
+        </div>
       </div>
     );
   }

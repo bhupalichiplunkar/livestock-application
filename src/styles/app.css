@@ -1,14 +1,30 @@
-.App {
+.app {
   text-align: center;
-  display: flex;
   width: 100%;
+}
+
+.main-container{
+  width: calc(100% - 25px);
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 25px;
 }
 
-.App > .table-data, .App > .graph-chart{
+
+
+.app > .main-container > .table-data, .App > .graph-chart{
   flex: 0 0 auto;
+}
+
+.app > .header {
+  height: 80px;
+  line-height: 80px;
+  font-size: 38px;
+  letter-spacing: 0.2px;
+  width: 80%;
+  margin: 0 auto 5%;
+  border-bottom: 3px solid black;
 }
 
 .table-data{
@@ -16,45 +32,10 @@
   line-height: 25px;
 }
 
-.table-data > table {
-  width: 100%;
-  border: none;
-  border-radius: 4px;
-  margin: 0 auto;
-  font-weight : lighter;
-  font-size: 14px;
-  letter-spacing: 0.2px;
-}
-
-.table-data > table > thead {
-  line-height: 30px;
-  color: #fff;
-  background-color: #303F9F;  
-  font-size: 15px;
-}
-
-td{
-  padding: 0;
-}
-
 .graph-chart{
-  margin-top : 5%;
+  margin-top : 2.5%;
   width: 65%
 }
 
-.incr { 
-  background-color: #C8E6C9;
-  color: #1B5E20;
-}
-
-.decr{
-  background-color: #FFEBEE;
-  color: #B71C1C;  
-}
-
-.new, .const {
-  background-color: #fff;
-  color :  #3949AB;  
-}
 
 

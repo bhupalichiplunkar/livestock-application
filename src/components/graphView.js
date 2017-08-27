@@ -19,7 +19,7 @@ class GraphView extends Component{
                     <YAxis />
                     <CartesianGrid strokeDasharray="3 3"/>
                     <Tooltip/>
-                    <Legend align="middle"/>
+                    <Legend align="center"/>
                     <Line type="monotone" dataKey="price" stroke="#8884d8" activeDot={{r: 8}}/>
                     </LineChart>
                 </ResponsiveContainer>

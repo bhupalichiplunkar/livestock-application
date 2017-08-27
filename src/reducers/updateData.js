@@ -1,5 +1,5 @@
-import { UPDATE_DATA } from './../actions'
-import { updateListData } from './../helpers';
+import { UPDATE_DATA } from '../actions'
+import { updateListData } from '../helpers';
 
 export default function UpdateData (state=[],action){
     switch(action.type){
