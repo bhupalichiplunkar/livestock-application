@@ -15,8 +15,8 @@ class TableView extends Component{
     render () {
         return (
             <div className="table-data">
-                <h3> Tabular Representation </h3>
-                <table className="table table-hover">
+                <h3> Real Time Stocks </h3>
+                <table className="table">
                     <thead>
                         <tr>
                             <td className="heading-cell">Ticker</td>
